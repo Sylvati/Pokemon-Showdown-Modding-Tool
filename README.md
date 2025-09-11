@@ -2,6 +2,10 @@
 
 This tool is not created for profit. If you paid for this tool in any way, get your money back. I do not intend to infringe any copyrights and am creating this project with the sole intention of emboldening the Pokemon fangame community.
 
+# Inspiration
+
+I was playing Pokemon Odyssey and wanted to build a team. Unfortunately showdown does not hae fakemon, so I tried to make my own mod with a little success. This made me realize that every rom-hack should either have a teambuilding tool like Showdown or be very easy to make a teambuilding tool for.
+
 # Goal
 
 To become a modding tool that allows fangame creators to utilize Pokemon Showdown's battling system to allow for fangames outside of the rom hacking scene.
