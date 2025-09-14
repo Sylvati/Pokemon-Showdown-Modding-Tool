@@ -37,6 +37,10 @@ This would allow for csv files which are very human readable and editable to be 
 
 Think the inventory and player already existing. The ideal goal of this is to have a drop-in framework that is entirely customizable. 
 
+4. Mobile support
+
+I know a lot of people play rom hacks on phone, so ideally this would work there too.
+
 # Note
 
 I will be primarily working with Godot as I believe it is the future. However, I recognize it has its issues and I will try to make this compatible with Unity. I cannot make any promises about Unreal support though, because I haven't ever worked with it. I know C++ though so it probably wouldn't be the most impossible thing ever.
