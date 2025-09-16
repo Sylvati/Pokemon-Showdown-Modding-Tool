@@ -23,7 +23,7 @@ func get_all_mods() -> Dictionary:
 	return mod_data
 
 ## Factory for DexEntrys.
-func create_dex_entry_from_json(data: Dictionary) -> DexEntry:
+func create_dex_entry_from_json(data: Dictionary, mod_name: String, key: String) -> DexEntry:
 	# Create the entry.
 	var entry := DexEntry.new()
 	# Set dex number
@@ -58,4 +58,6 @@ func create_dex_entry_from_json(data: Dictionary) -> DexEntry:
 	entry.forme_order = data.get("formeOrder", [])
 	# Set can gigantamax
 	entry.can_gigantamax = data.get("canGigantamax", "")
+	# Set sprite location
+	entry.sprite_location = "res://Mods/" + mod_name + "/sprites/" + key + ".png"
 	return entry

@@ -51,3 +51,5 @@ class_name DexEntry
 @export var forme_order: Array
 # Can Gigantamax (Stores the G-Max move? Dunno)
 @export var can_gigantamax: String
+# Sprite location (May change later, not sure
+@export var sprite_location: String

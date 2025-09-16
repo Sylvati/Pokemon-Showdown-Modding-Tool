@@ -1,2 +1,6 @@
 .venv/
 gen5_front_sprites/
+# DO NOT UPLOAD SPRITES
+mobat-engine/Mods/showdown-loader/sprites
+# Catch all to save my stupid ahh
+mobat-engine/Mods

@@ -15,6 +15,11 @@ This is a good start, but I would still like to abstract it away from the code. 
 But that's for later. The pokemon need to be creatable.
 Also we're inheriting a LOT from pokemon showdown right now. We can change a lot of things given Godot's flexibility.
 
+I also got some sprites for use for now. I am going to have to sub out for fan sprites later because (obvious reasons)
+I think this is a good stopping point for Day 1.
+
+Tomorrow maybe work on getting instantiable pokemon from the resources, so like pokes with actual EVs, IVs, effective stats based on BS totals etc.
+
 # Goal
 
 To become a modding tool that allows fangame creators to utilize Pokemon Showdown's battling system to allow for fangames outside of the rom hacking scene.

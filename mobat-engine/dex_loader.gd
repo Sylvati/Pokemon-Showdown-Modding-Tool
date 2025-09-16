@@ -81,7 +81,7 @@ func load_dex(mod_name: String, dex_dir: DirAccess):
 			for key in parsed:
 				var value = parsed[key]
 				# Create the dex entry
-				var dex_entry: DexEntry = ModManager.create_dex_entry_from_json(value)
+				var dex_entry: DexEntry = ModManager.create_dex_entry_from_json(value, mod_name, key)
 				# Add it to the entries
 				entries[key] = dex_entry
 			
