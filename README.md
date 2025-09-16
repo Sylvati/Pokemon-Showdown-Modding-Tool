@@ -6,6 +6,15 @@ This tool is not created for profit. If you paid for this tool in any way, get y
 
 I was playing Pokemon Odyssey and wanted to build a team. Unfortunately showdown does not hae fakemon, so I tried to make my own mod with a little success. This made me realize that every rom-hack should either have a teambuilding tool like Showdown or be very easy to make a teambuilding tool for.
 
+# Progress
+
+## Day 1: Starting realizations
+Got the dex from pokemon showdown and made it into a json file. This is the first content mod.
+Coded a loader so now all you need to do is fill in certain fields in a json for fakemon.
+This is a good start, but I would still like to abstract it away from the code. I want a nice UI.
+But that's for later. The pokemon need to be creatable.
+Also we're inheriting a LOT from pokemon showdown right now. We can change a lot of things given Godot's flexibility.
+
 # Goal
 
 To become a modding tool that allows fangame creators to utilize Pokemon Showdown's battling system to allow for fangames outside of the rom hacking scene.

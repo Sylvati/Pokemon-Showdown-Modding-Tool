@@ -11,8 +11,13 @@ config_version=5
 [application]
 
 config/name="MoBat Engine"
+run/main_scene="res://node_2d.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+ModManager="*res://mod_manager.gd"
 
 [rendering]
 

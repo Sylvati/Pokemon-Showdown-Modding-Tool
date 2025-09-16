@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://n3q60k446mt6"]
+
+[ext_resource type="Script" path="res://dex_loader.gd" id="1_28x2s"]
+[ext_resource type="Script" path="res://mod_manager.gd" id="2_c4opd"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Mod Loader" type="Node" parent="."]
+script = ExtResource("1_28x2s")
+
+[node name="Mod Manager" type="Node" parent="."]
+script = ExtResource("2_c4opd")
