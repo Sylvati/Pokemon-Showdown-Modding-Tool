@@ -3,6 +3,7 @@ extends Node
 @export var mods_path: String = "res://Mods"
 @export var global_seperator: String = "#"
 @export var amount_of_seperators: int = 50
+var start_button: Button
 
 # Called when the node enters the scene tree for the first time.
 # Loads mods
@@ -13,6 +14,10 @@ func _ready() -> void:
 	# Load user:// mods
 	print("Loading user mods...")
 	load_user_mods()
+	# Let everything begin :)
+	start_button = $"../Start Button"
+	start_button.text = "Start Battle (Ready.)"
+	start_button.disabled = false
 
 func load_user_mods() -> void:
 	# Print sep

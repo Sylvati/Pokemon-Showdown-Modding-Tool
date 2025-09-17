@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://n3q60k446mt6"]
+[gd_scene load_steps=6 format=3 uid="uid://n3q60k446mt6"]
 
 [ext_resource type="Script" path="res://dex_loader.gd" id="1_28x2s"]
 [ext_resource type="Script" path="res://mod_manager.gd" id="2_c4opd"]
+[ext_resource type="Script" path="res://example_usage.gd" id="3_iahud"]
+[ext_resource type="Script" path="res://battle_handler.gd" id="4_hmr41"]
+[ext_resource type="Texture2D" uid="uid://bvdf2e8mw4bro" path="res://Mods/internal/Game Boy Advance - Pokemon FireRed _ LeafGreen - Battle Effects - Battle Backgrounds.png" id="5_kr55y"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -10,3 +13,37 @@ script = ExtResource("1_28x2s")
 
 [node name="Mod Manager" type="Node" parent="."]
 script = ExtResource("2_c4opd")
+
+[node name="Example Usage" type="Node" parent="."]
+script = ExtResource("3_iahud")
+
+[node name="Battle Handler" type="Node" parent="."]
+script = ExtResource("4_hmr41")
+
+[node name="Start Button" type="Button" parent="."]
+offset_left = 370.0
+offset_top = 213.0
+offset_right = 1399.0
+offset_bottom = 731.0
+disabled = true
+text = "Start Battle (Loading...)"
+
+[node name="Battle" type="Node2D" parent="."]
+position = Vector2(1920, 0)
+
+[node name="Background" type="Sprite2D" parent="Battle"]
+scale = Vector2(8.038, 8.038)
+texture = ExtResource("5_kr55y")
+centered = false
+region_enabled = true
+region_rect = Rect2(249.5, 6.5, 239, 111)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Battle"]
+offset_top = 892.285
+offset_right = 1920.0
+offset_bottom = 1080.03
+
+[node name="Camera2D" type="Camera2D" parent="."]
+anchor_mode = 0
+
+[connection signal="pressed" from="Start Button" to="Battle Handler" method="_on_start_button_pressed"]
